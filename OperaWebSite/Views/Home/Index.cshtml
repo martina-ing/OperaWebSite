@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Home Index";
+}
+
+
+<h1>Bienvenidos al Teatro Colon </h1>
+
+<h3>@ViewBag.Fecha</h3>
+
+<h5>@Html.ActionLink("Ir a Operas", "Index", "Opera")</h5>
+
+@section SideBarDerecha
+{
+    <h3>Imagenes del interior</h3>
+    <div id="imagenes">
+        <img src="~/Imagenes/teatro1.jpg">
+        <img src="~/Imagenes/teatro2.jpg">
+        <img src="~/Imagenes/teatro3.jpg">
+
+    </div>
+   
+}
+
+@section SideBarIzquierda
+{
+    <h2>Historia del Teatro Colon</h2>
+    <p>
+        El Teatro Colón inició sus actividades en 1857 en un edificio ubicado en la Plaza de Mayo, donde funcionó hasta 1888. El teatro se mudó entonces al edificio actual ubicado frente a la Plaza Vaticano, que tardó 20 años en ser construido hasta su inauguración en 1908.
+    </p>
+
+    <p>
+        En su historia se destaca la creación de los cuerpos artísticos como la Orquesta, el Coro y el Ballet en la década de 1920, ante la imposibilidad de contar siempre con elencos extranjeros completos. En 1931 se realiza la municipalización que, hasta entrada la Segunda Guerra Mundial, logró una de las etapas más estables y fructíferas del teatro. En 1946 el peronismo impulsó una política de apertura a la música popular y de mayor democratización del público habitual, que fue revertida luego de su derrocamiento en 1955 y nuevamente retomada cuando se recuperó la democracia en 1983.
+        En 1968 se proyectó la ampliación del Colón, que se construiría bajo tierra y a un costado del antiguo edificio, evitando así modificar su arquitectura. La obra significó la refacción y re-equipamiento de la sala, del escenario, de los camarines y de los talleres, y la construcción del anexo subterráneo bajo la plazoleta República del Vaticano (que fue transformada en un estacionamiento), donde funcionan más talleres, depósitos y salas de ensayo. En noviembre de 1989 fue declarado Monumento Histórico Nacional.
+        En 2001 se inició un trabajo de restauración plena que se extendería hasta 2010, cuando fue reinaugurado el 24 de mayo en conmemoración del Bicentenario de Argentina.
+
+    </p>
+}
